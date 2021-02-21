@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <section class="container filler">
+    <div class="black-title-container animate__animated animate__fadeInDown">
+        <div class="floating-title">
+            <h1 class="black-title">CLIENTS & PARTNERS</h1>
+        </div>
+    </div>
+    <div class="grid_50_50">
+        <!-- CLIENTS -->
+        <div class="clients_list animate__animated animate__backInLeft">
+            <div class="title-small-line">
+                <h3>CLIENTS</h3>
+                <span ></span>
+            </div>
+            <ul class="clients-list">
+                <li>
+                <a id="ServiceHrvatskiTelekom" href="services/HrvatskiTelekom.html">
+                    <div class="clients-grid-1">
+                        <h2>Croatian telecom</h2>
+                        <span>/ Broadcast production & DTH satellite teleport</span>
+                    </div>
+                </a>
+                </li>
+                <li class="animate__animated animate__backInLeft">
+                <a id="ServiceHRT" href="services/HRT.html">
+                    <div class="clients-grid-1" >
+                        <h2>Croatian radiotelevision</h2>
+                        <span>/ Graphic VR/AR production</span>
+                    </div>
+                </a>
+                </li>
+                <li class="animate__animated animate__backInLeft">
+                <a id="ServiceArenaSport" href="services/ArenaSport.html">
+                    <div class="clients-grid-1">
+                        <h2>Arena Sport</h2>
+                        <span>/ Playout facility & TV VR/AR studio</span>
+                    </div>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <!-- PARTNERS -->
+        <div class="partners_list animate__animated animate__backInRight">
+            <div class="title-small-line">
+                <h3>PARTNERS</h3>
+                <span ></span>
+            </div>
+            <div class="partners_grid">
+                <img src="images/logo/partners/Mozzaika.svg" alt="Mozzaika">
+                <img src="images/logo/partners/grassvalley.png" alt="Grass Valley">
+                <img src="images/logo/partners/Vizrt_white-01.svg" alt="Vizrt">
+                <img src="images/logo/partners/stype-logo-white-150.png" alt="Stype">
+                <img src="images/logo/partners/spider_cam_logo.png" alt="Spider_cam">
+                <img src="images/logo/partners/Newton_nordic.png" alt="Newton_nordic">
+            </div>
+        </div>
+    </div>
+    </section>
+{% endblock %}

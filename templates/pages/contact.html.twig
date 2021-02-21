@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <section class="container contact filler">
+        <div class="title-2 animate__animated animate__bounceInLeft">
+            <h2>Have some questions?</h2>
+            <p class="small-title">Drop us a line</p>
+        </div>
+        <form action="#" method="post" class="form" id="contact_form">
+            <fieldset>
+                <!-- DROPDOWN  -->
+                <div class="contact-dropbox-container">
+                    <p>What is the type of your project?</p>
+                    <div class="selectbox selectbox--unselect" data-option="">
+                    <div class="selectbox__displayWord">
+                        -- Choose --
+                    </div>
+                    <div class="option-container">
+                        <div class="option-container__option">
+                            <input type="radio" class="option__radio" id="type01" name="category" value="TV production">
+                            <label class="option__label" for="type02" data-value="TVproduction">TV production</label>
+                        </div>
+                        <div class="option-container__option">
+                            <input type="radio" class="option__radio" id="type02" name="category"value="Satellite connections">
+                            <label class="option__label" for="type02" data-value="Satellite connections">Satellite
+                            connections</label>
+                        </div>
+                        <div class="option-container__option">
+                            <input type="radio" class="option__radio" id="type03" name="category"value="Graphic design">
+                            <label class="option__label" for="type03" data-value="Graphic design">Graphic design</label>
+                        </div>
+                        <div class="option-container__option">
+                            <input type="radio" class="option__radio" id="type04" name="category"value="Augmented reality">
+                            <label class="option__label" for="type04" data-value="Augmented reality">Augmented
+                            reality</label>
+                        </div>
+                        <div class="option-container__option">
+                            <input type="radio" class="option__radio" id="type05" name="category" value="Other">
+                            <label class="option__label" for="type05" data-value="Other">Other</label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- INPUTS -->
+                <div class="inputFilled">
+                    <input id="contact_name" type="text" name="name" required pattern="\S+.*">
+                    <label for="contact_name" class="control-label">Your name</label>
+                    <i class="bar-form"></i>
+                </div>
+                <div class="inputFilled">
+                    <input id="contact_email" type="email" name="email" required pattern="\S+.*">
+                    <label for="contact_email" class="control-label">E-mail</label>
+                    <i class="bar-form"></i>
+                </div>
+                <div class="inputFilled">
+                    <input id="contact_phone" type="number" name="phone" required="required">
+                    <label for="contact_phone" class="control-label">Phone</label>
+                    <i class="bar-form"></i>
+                </div>
+                <div class="inputFilled">
+                    <textarea id="contact_message" rows="5" cols="10" name="message" required></textarea>
+                    <label for="contact_message" class="control-label">How can we help?</label>
+                    <i class="bar-form"></i>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" checked="checked" name="terms"/>
+                    <i class="helper"></i>I agree that Croatel will save my personal information so that they can
+                    contact me in the future.
+                    </label>
+                </div>
+            </fieldset>
+            <div class="button-form">
+                <button id="btn_form" class="btn-form btn-ripple" type="submit" value="Send">Send
+                message
+                </button>
+            </div>
+            <span id="status"></span>
+        </form>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="scripts/script.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/contact.js"></script>
+{% endblock %}

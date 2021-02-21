@@ -2,12 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="CROATEL was formed from previous members of Satellite group in HPT (Croatian Post and Telecommunication), as the first licensed satellite service provider company in Croatia. CROATEL offers services for the professional satellite communication.">
+        <meta name="Keywords" content="CROATEL, outside broadcasting, microwace and satelite communications, playout facility, augmented reality, UHD/HD TV production, graphic design, 3D, Telecommunications, sport">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% block javascripts %}{% endblock %}
+        <title>{% block title %}Croatel{% endblock %}</title>
+        
+        {% block stylesheets %}
+            <link type="text/css" rel="stylesheet" href="styles/main.css">
+            <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+            <link rel='shortcut icon' type='image/x-icon' href='images/favicon/favicon.ico' />
+            <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+            <link rel="manifest" href="images/favicon/site.webmanifest">
+        {% endblock %}
+        
+            <script src="scripts/vendors/JQueryV351.js"></script>
+            <script src="scripts/navigation.js"></script>
     </head>
     <body>
+        {% include 'header.html.twig' %}
         {% block body %}{% endblock %}
+        {% include 'footer.html.twig' %}
     </body>
+    {% block javascripts %}
+    {% endblock %}
 </html>
